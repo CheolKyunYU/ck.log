@@ -1,4 +1,4 @@
-baseURL = 'https://CheolKyunYU.github.io/ck.log.github.io/'
+baseURL = 'https://CheolKyunYU.github.io/ck/'
 languageCode = 'ko-KR'
 title = 'CK log'
 theme = 'PaperMod'
