@@ -1,0 +1,33 @@
+baseURL = 'https://CheolKyunYU.github.io/ck.log.github.io/'
+languageCode = 'ko-KR'
+title = 'CK log'
+theme = 'PaperMod'
+
+[params]
+  env = "production"
+  title = "CK log"
+  description = "IT 시스템 엔지니어 CK의 실무 인프라 구축, 서버 트러블슈팅, 등의 경험 기술 블로그 (HPE, Linux, VME, HPE Morpheus , Zerto DR)"
+  author = "CK"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+
+[languages.ko]
+  languageName = "Korean"
+  weight = 1
+  [languages.ko.menu]
+    [[languages.ko.menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      url = "/posts/"
+      weight = 10
+    [[languages.ko.menu.main]]
+      identifier = "search"
+      name = "Search"
+      url = "/search/"
+      weight = 20
+    [[languages.ko.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 30
