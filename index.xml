@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CK log</title>
-    <link>https://CheolKyunYU.github.io/ck.log/</link>
+    <link>https://CheolKyunYU.github.io/</link>
     <description>Recent content on CK log</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <atom:link href="https://CheolKyunYU.github.io/ck.log/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://CheolKyunYU.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://CheolKyunYU.github.io/ck.log/posts/hello-ck-log/</link>
+      <link>https://CheolKyunYU.github.io/posts/hello-ck-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://CheolKyunYU.github.io/ck.log/posts/hello-ck-log/</guid>
+      <guid>https://CheolKyunYU.github.io/posts/hello-ck-log/</guid>
       <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;
 &lt;p&gt;title: &amp;ldquo;CK log를 시작하며: 시스템 엔지니어의 기록 저장소&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;date: 2026-08-26T21:00:00+09:00&lt;/p&gt;
@@ -26,9 +26,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://CheolKyunYU.github.io/ck.log/posts/test-log/</link>
+      <link>https://CheolKyunYU.github.io/posts/test-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://CheolKyunYU.github.io/ck.log/posts/test-log/</guid>
+      <guid>https://CheolKyunYU.github.io/posts/test-log/</guid>
       <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;
 &lt;p&gt;title: &amp;ldquo;인프라 자동화 블로그 첫 번째 테스트 포스트&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;date: 2026-08-26T20:00:00+09:00&lt;/p&gt;
