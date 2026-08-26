@@ -35,3 +35,9 @@ theme = "PaperMod"
       name = "Tags"
       url = "/tags/"
       weight = 30
+    [[languages.ko.menu.main]]
+      identifier = "privacy"
+      name = "Privacy Policy"
+      url = "/privacy/"
+      weight = 40
+
