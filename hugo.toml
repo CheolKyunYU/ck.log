@@ -1,4 +1,5 @@
 baseURL = 'https://CheolKyunYU.github.io/ck.log/'
+publishDir = "."
 languageCode = 'ko-KR'
 title = 'CK log'
 theme = 'PaperMod'
