@@ -41,3 +41,10 @@ theme = "PaperMod"
       url = "/privacy/"
       weight = 40
 
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git", "date"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
+
+
