@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>CK log</title>
-		<link>https://CheolKyunYU.github.io/ck.log/</link>
-		<description>Recent content on CK log</description>
-		<generator>Hugo</generator>
-		<language>ko-KR</language>
-		
-		
-		
-		
-			<atom:link href="https://CheolKyunYU.github.io/ck.log/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title></title>
-				<link>https://CheolKyunYU.github.io/ck.log/posts/test-log/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://CheolKyunYU.github.io/ck.log/posts/test-log/</guid>
-				<description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;&#xA;&lt;p&gt;title: &amp;ldquo;인프라 자동화 블로그 첫 번째 테스트 포스트&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;date: 2026-08-26T20:00:00+09:00&lt;/p&gt;&#xA;&lt;p&gt;draft: false&lt;/p&gt;&#xA;&lt;p&gt;tags: [&amp;ldquo;Infrastructure&amp;rdquo;, &amp;ldquo;HPE&amp;rdquo;, &amp;ldquo;Test&amp;rdquo;]&lt;/p&gt;&#xA;&lt;p&gt;-&amp;ndash;&lt;/p&gt;&#xA;&lt;p&gt;## 1. 개요&lt;/p&gt;&#xA;&lt;p&gt;기존 워드프레스에서 이관 및 테스트를 위한 첫 번째 인프라 구축 일지 기록입니다.&lt;/p&gt;&#xA;&lt;p&gt;## 2. 주요 서버 설정 예시&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Ubuntu Netplan 및 네트워크 인터페이스 확인 예시&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip a&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo netplan apply&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-			</item>
-	</channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CK log</title>
+    <link>https://CheolKyunYU.github.io/ck.log/</link>
+    <description>Recent content on CK log</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <atom:link href="https://CheolKyunYU.github.io/ck.log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://CheolKyunYU.github.io/ck.log/posts/test-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://CheolKyunYU.github.io/ck.log/posts/test-log/</guid>
+      <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;
+&lt;p&gt;title: &amp;ldquo;인프라 자동화 블로그 첫 번째 테스트 포스트&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;date: 2026-08-26T20:00:00+09:00&lt;/p&gt;
+&lt;p&gt;draft: false&lt;/p&gt;
+&lt;p&gt;tags: [&amp;ldquo;Infrastructure&amp;rdquo;, &amp;ldquo;HPE&amp;rdquo;, &amp;ldquo;Test&amp;rdquo;]&lt;/p&gt;
+&lt;p&gt;-&amp;ndash;&lt;/p&gt;
+&lt;p&gt;## 1. 개요&lt;/p&gt;
+&lt;p&gt;기존 워드프레스에서 이관 및 테스트를 위한 첫 번째 인프라 구축 일지 기록입니다.&lt;/p&gt;
+&lt;p&gt;## 2. 주요 서버 설정 예시&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\#&lt;/span&gt; Ubuntu Netplan 및 네트워크 인터페이스 확인 예시
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo netplan apply
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
 </rss>
