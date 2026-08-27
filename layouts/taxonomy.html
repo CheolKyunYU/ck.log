@@ -11,6 +11,7 @@
 </header>
 {{- end }}
 
+{{- if eq .Type "categories" }}
 <div class="category-tree" style="margin-top: 24px; padding-left: 10px;">
     <ul style="list-style-type: none; padding-left: 16px; margin: 0; border-left: 2px solid var(--border);">
         {{- $type := .Type }}
@@ -39,6 +40,21 @@
         {{- end }}
     </ul>
 </div>
+{{- else }}
+<ul class="terms-tags">
+    {{- $type := .Type }}
+        {{- range $key, $value := .Data.Terms.Alphabetical }}
+            {{- $name := .Name }}
+            {{- $count := .Count }}
+            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .LinkTitle }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+            </li>
+        {{- end }}
+    {{- end }}
+</ul>
+{{- end }}
 
 {{- end }}
+
 
