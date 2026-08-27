@@ -11,24 +11,34 @@
 </header>
 {{- end }}
 
-<ul class="terms-tags" style="padding-left: 0; list-style: none;">
-    {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.Alphabetical }}
-        {{- $name := .Name }}
-        {{- $count := .Count }}
-        {{- with site.GetPage (printf "/%s/%s" $type $name) }}
-        <li style="margin-bottom: 16px; padding: 16px 20px; background: var(--entry); border-radius: 8px; border: 1px solid var(--border);">
-            <a href="{{ .Permalink }}" style="font-size: 1.25rem; font-weight: bold; text-decoration: none; color: var(--primary);">
-                {{ .LinkTitle }} <span style="font-size: 0.9rem; color: var(--secondary); font-weight: normal;">({{ $count }})</span>
-            </a>
-            {{- if .Description }}
-            <div style="font-size: 0.95rem; color: var(--secondary); margin-top: 6px; line-height: 1.5;">
-                {{ .Description }}
-            </div>
+<div class="category-tree" style="margin-top: 24px; padding-left: 10px;">
+    <ul style="list-style-type: none; padding-left: 16px; margin: 0; border-left: 2px solid var(--border);">
+        {{- $type := .Type }}
+        {{- range $key, $value := .Data.Terms.Alphabetical }}
+            {{- $name := .Name }}
+            {{- $count := .Count }}
+            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+            <li style="position: relative; padding-left: 24px; margin-bottom: 28px;">
+                <div style="position: absolute; left: -16px; top: 14px; width: 22px; height: 2px; background: var(--border);"></div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 1.2rem;">📂</span>
+                    <a href="{{ .Permalink }}" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--primary);">
+                        {{ .LinkTitle }}
+                    </a>
+                    <span style="font-size: 0.85rem; padding: 2px 10px; background: var(--entry); border: 1px solid var(--border); border-radius: 12px; color: var(--secondary); font-weight: 600;">
+                        {{ $count }}개의 글
+                    </span>
+                </div>
+                {{- if .Description }}
+                <div style="font-size: 0.95rem; color: var(--secondary); margin-top: 8px; margin-left: 32px; line-height: 1.5;">
+                    {{ .Description }}
+                </div>
+                {{- end }}
+            </li>
             {{- end }}
-        </li>
         {{- end }}
-    {{- end }}
-</ul>
+    </ul>
+</div>
 
 {{- end }}
+
