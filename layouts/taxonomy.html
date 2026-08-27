@@ -1,0 +1,34 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+{{- end }}
+
+<ul class="terms-tags" style="padding-left: 0; list-style: none;">
+    {{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+        {{- $name := .Name }}
+        {{- $count := .Count }}
+        {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+        <li style="margin-bottom: 16px; padding: 16px 20px; background: var(--entry); border-radius: 8px; border: 1px solid var(--border);">
+            <a href="{{ .Permalink }}" style="font-size: 1.25rem; font-weight: bold; text-decoration: none; color: var(--primary);">
+                {{ .LinkTitle }} <span style="font-size: 0.9rem; color: var(--secondary); font-weight: normal;">({{ $count }})</span>
+            </a>
+            {{- if .Description }}
+            <div style="font-size: 0.95rem; color: var(--secondary); margin-top: 6px; line-height: 1.5;">
+                {{ .Description }}
+            </div>
+            {{- end }}
+        </li>
+        {{- end }}
+    {{- end }}
+</ul>
+
+{{- end }}
