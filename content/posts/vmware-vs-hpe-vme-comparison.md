@@ -2,6 +2,7 @@
 title: "VMware vs HPE VME 비교 분석"
 date: 2025-12-31T20:00:00+09:00
 draft: false
+categories: ["Tech"]
 tags: ["VMware", "HPE", "VME", "vSphere", "KVM", "Comparison"]
 ---
 

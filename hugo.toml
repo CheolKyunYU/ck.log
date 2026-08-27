@@ -28,10 +28,16 @@ theme = "PaperMod"
       url = "/posts/"
       weight = 10
     [[languages.ko.menu.main]]
+      identifier = "categories"
+      name = "Categories"
+      url = "/categories/"
+      weight = 15
+    [[languages.ko.menu.main]]
       identifier = "search"
       name = "Search"
       url = "/search/"
       weight = 20
+
     [[languages.ko.menu.main]]
       identifier = "tags"
       name = "Tags"
@@ -42,6 +48,12 @@ theme = "PaperMod"
       name = "Privacy Policy"
       url = "/privacy/"
       weight = 40
+    [[languages.ko.menu.main]]
+      identifier = "about"
+      name = "About me"
+      url = "/about/"
+      weight = 50
+
 
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]

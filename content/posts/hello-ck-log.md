@@ -2,6 +2,7 @@
 title: "CK log를 시작하며: 시스템 엔지니어의 기록 저장소"
 date: 2026-08-26T21:00:00+09:00
 draft: false
+categories: ["일상"]
 tags: ["Blog", "Intro", "SystemEngineer"]
 ---
 

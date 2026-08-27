@@ -2,6 +2,7 @@
 title: "인프라 자동화 블로그 첫 번째 테스트 포스트"
 date: 2026-08-26T20:00:00+09:00
 draft: false
+categories: ["Tech"]
 tags: ["Infrastructure", "HPE", "Test"]
 ---
 

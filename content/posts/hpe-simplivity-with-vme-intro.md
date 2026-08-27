@@ -2,6 +2,7 @@
 title: "HPE SimpliVity With VME 소개"
 date: 2025-12-31T21:00:00+09:00
 draft: false
+categories: ["Tech"]
 tags: ["HPE", "SimpliVity", "VME", "HCI", "Infrastructure"]
 ---
 
