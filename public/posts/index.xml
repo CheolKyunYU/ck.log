@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on CK log</title><link>https://CheolKyunYU.github.io/ck.log/posts/</link><description>Recent content in Posts on CK log</description><generator>Hugo</generator><language>ko-KR</language><lastBuildDate>Mon, 31 Aug 2026 13:00:00 +0900</lastBuildDate><atom:link href="https://CheolKyunYU.github.io/ck.log/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>[HPE SimpliVity 6.2.0] Step 1. 실패 없는 구축을 위한 사전 설치 준비 &amp; 2노드 네트워크 설계 가이드</title><link>https://CheolKyunYU.github.io/ck.log/posts/01_simplivity_%EC%84%A4%EC%B9%98%EC%A4%80%EB%B9%84/</link><pubDate>Mon, 31 Aug 2026 13:00:00 +0900</pubDate><guid>https://CheolKyunYU.github.io/ck.log/posts/01_simplivity_%EC%84%A4%EC%B9%98%EC%A4%80%EB%B9%84/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;작성자&lt;/strong&gt;: 15년 차 IT 필드 엔지니어&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;작성자&lt;/strong&gt;: CK Log&lt;br&gt;
 &lt;strong&gt;기준 문서&lt;/strong&gt;: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;

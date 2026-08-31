@@ -2,6 +2,7 @@ baseURL = "https://CheolKyunYU.github.io/ck.log/"
 locale = "ko-KR"
 title = "CK log"
 theme = "PaperMod"
+paginate = 10
 
 # PaperMod Search
 [outputs]
@@ -16,6 +17,8 @@ theme = "PaperMod"
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
+  disableSpecial1stPost = true
+
 
 
 [languages.ko]
