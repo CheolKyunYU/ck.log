@@ -1,4 +1,10 @@
-# [HPE SimpliVity 6.2.0] Step 4. [클러스터 & OVC 배포] VM Essentials Manager 기반 HVM Cluster 생성 & SimpliVity Virtual Controller(OVC) 배포 가이드
+---
+title: "[HPE SimpliVity 6.2.0] Step 4. [클러스터 & OVC 배포] VM Essentials Manager 기반 HVM Cluster 생성 & SimpliVity Virtual Controller(OVC) 배포 가이드"
+date: 2026-08-31T17:00:00+09:00
+draft: false
+categories: ["Tech"]
+tags: ["HPE", "SimpliVity", "VME", "OVC", "Cluster", "HVM", "Troubleshooting"]
+---
 
 > **작성자**: 15년 차 IT 필드 엔지니어  
 > **기준 문서**: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)
@@ -26,7 +32,7 @@
 
 이번 포스팅은 아래 현장 구축 순서도의 **최종 단계(HVM Cluster 생성 & SimpliVity OVC 배포)**를 다룹니다.
 
-![HPE SimpliVity 실전 구축 순서도](./images/field_deployment_sequence.jpg)
+![HPE SimpliVity 실전 구축 순서도](images/field_deployment_sequence.jpg)
 
 ### 💡 HVM 클러스터 & OVC 배포 흐름 (Mermaid Diagram)
 

@@ -1,4 +1,10 @@
-# [HPE SimpliVity 6.2.0] Step 2. [관리서버] VME Manager VM(vmgmgr) 설치 & Arbiter 서버 VM 생성 가이드
+---
+title: "[HPE SimpliVity 6.2.0] Step 2. [관리서버] VME Manager VM(vmgmgr) 설치 & Arbiter 서버 VM 생성 가이드"
+date: 2026-08-31T15:00:00+09:00
+draft: false
+categories: ["Tech"]
+tags: ["HPE", "SimpliVity", "VME", "VME-Manager", "Arbiter", "Linux", "Troubleshooting"]
+---
 
 > **작성자**: 15년 차 IT 필드 엔지니어  
 > **기준 문서**: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)
@@ -24,7 +30,7 @@
 
 이번 포스팅은 아래 현장 구축 순서도의 **관리서버 두 번째 & 세 번째 단계 (VME Manager VM & Arbiter VM)**를 다룹니다.
 
-![HPE SimpliVity 실전 구축 순서도](./images/field_deployment_sequence.jpg)
+![HPE SimpliVity 실전 구축 순서도](images/field_deployment_sequence.jpg)
 
 ### 💡 VME Manager & Arbiter 배치 아키텍처 (Mermaid Diagram)
 
@@ -57,7 +63,7 @@ flowchart TD
 
 관리서버 터미널에서 `hpe-vm` 콘솔 유틸리티를 구동하면 **VME Manager Installation Options** 설정 화면이 호출됩니다.
 
-![hpe-vm 콘솔 VME Manager 설치 화면](./images/hpe-vm%20console로%20vme%20manager설치.jpg)
+![hpe-vm 콘솔 VME Manager 설치 화면](images/hpe_vm_console_vme_mgr.jpg)
 
 ### 📋 텍스트 UI 주요 설정 파라미터 상세 가이드
 

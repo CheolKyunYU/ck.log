@@ -1,4 +1,10 @@
-# [HPE SimpliVity 6.2.0] Step 3. [SimpliVity 서버] 펌웨어 업데이트, HVM Base OS 리이미징 & Initial Setup 가이드
+---
+title: "[HPE SimpliVity 6.2.0] Step 3. [SimpliVity 서버] 펌웨어 업데이트, HVM Base OS 리이미징 & Initial Setup 가이드"
+date: 2026-08-31T16:00:00+09:00
+draft: false
+categories: ["Tech"]
+tags: ["HPE", "SimpliVity", "Firmware", "InitialSetup", "SPP", "HVM", "Troubleshooting"]
+---
 
 > **작성자**: 15년 차 IT 필드 엔지니어  
 > **기준 문서**: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)
@@ -26,7 +32,7 @@
 
 이번 포스팅은 아래 현장 구축 순서도의 **SimpliVity 서버 영역 첫 번째 & 두 번째 단계**를 다룹니다.
 
-![HPE SimpliVity 실전 구축 순서도](./images/field_deployment_sequence.jpg)
+![HPE SimpliVity 실전 구축 순서도](images/field_deployment_sequence.jpg)
 
 ### 💡 SimpliVity 노드 초기화 프로세스 (Mermaid Diagram)
 

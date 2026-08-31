@@ -1,4 +1,10 @@
-# [HPE SimpliVity 6.2.0] Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드
+---
+title: "[HPE SimpliVity 6.2.0] Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드"
+date: 2026-08-31T14:00:00+09:00
+draft: false
+categories: ["Tech"]
+tags: ["HPE", "SimpliVity", "VME", "BaseOS", "NTP", "DNS", "NFS", "Troubleshooting"]
+---
 
 > **작성자**: 15년 차 IT 필드 엔지니어  
 > **기준 문서**: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)
@@ -26,7 +32,7 @@
 
 현장에서 실제로 작업하는 HPE SimpliVity 6.2.0 (HVM 기반) 전체 배포 순서입니다. 이번 포스팅은 **상단 첫 번째 단계(관리서버 BaseOS & 인프라 서비스)**를 다룹니다.
 
-![HPE SimpliVity 실전 구축 순서도](./images/field_deployment_sequence.jpg)
+![HPE SimpliVity 실전 구축 순서도](images/field_deployment_sequence.jpg)
 
 ### 💡 관리서버 구축 트래픽 흐름 (Mermaid Diagram)
 
@@ -61,7 +67,7 @@ flowchart TD
 ### 1단계: 네트워크 인터페이스 및 고정 IP 설정
 관리서버 물리 장비에 **BaseOS HVM 24.04 ISO**를 마운트하여 부팅하면 네트워크 설정 창(`Network configuration`)이 나타납니다.
 
-![BaseOS 네트워크 설정 화면](./images/OS%20설치%20네트워크세팅.jpg)
+![BaseOS 네트워크 설정 화면](images/os_network_setup.jpg)
 
 * **이더넷 인터페이스 확인**: 물리 NIC 포트(`ens33`, `ens38` 등)가 정상 인식되었는지 확인합니다.
 * **IP 수동 지정 (Static IP)**: 현장에서 DHCP를 사용할 경우 장비 재부팅 시 IP가 변경되어 관리망이 마비됩니다. 인터페이스를 선택하고 **Subnet, Address, Gateway, Name Servers(DNS)**를 고정 IP로 지정합니다.
@@ -70,7 +76,7 @@ flowchart TD
 ### 2단계: 스토리지 레이아웃 & LVM 그룹 설정
 네트워크 설정 완료 후 디스크 파티션 단계(`Guided storage configuration`)로 진입합니다.
 
-![BaseOS 디스크 LVM 설정 화면](./images/OS%20설치%20디스크%20LVM%20세팅.jpg)
+![BaseOS 디스크 LVM 설정 화면](images/os_disk_lvm_setup.jpg)
 
 * **[X] Use an entire disk**: OS 설치 대상 시스템 디스크(예: `/dev/sda`)를 전체 선택합니다.
 * **[X] Set up this disk as an LVM group**: **LVM(Logical Volume Manager) 그룹 설정을 반드시 체크**합니다. LVM으로 구성해야 추후 관리서버 볼륨 용량이 부족할 때 유연하게 파티션을 확장(LVExtend)할 수 있습니다.
