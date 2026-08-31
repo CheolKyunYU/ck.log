@@ -17,7 +17,7 @@ paginate = 10
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
-  disableSpecial1stPost = true
+
 
 
 
