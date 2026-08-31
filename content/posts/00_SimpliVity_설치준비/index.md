@@ -1,5 +1,6 @@
 ---
-title: "[HPE SimpliVity 6.2.0] Step 1. 실패 없는 구축을 위한 사전 설치 준비 & 2노드 네트워크 설계 가이드"
+title: "[HPE SimpliVity 6.2.0] PreStep. 실패 없는 구축을 위한 사전 설치 준비 & 2노드 네트워크 설계 가이드"
+description: "HPE SimpliVity 6.2.0 2노드 클러스터 구축 전 필수 수집 IP 리스트, OOB/In-Band/Storage VLAN 분리 설계 및 방화벽 오픈 가이드를 제공합니다."
 date: 2026-08-31T13:00:00+09:00
 draft: false
 categories: ["Tech"]

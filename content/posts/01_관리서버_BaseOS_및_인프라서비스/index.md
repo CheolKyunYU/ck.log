@@ -1,5 +1,6 @@
 ---
 title: "[HPE SimpliVity 6.2.0] Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드"
+description: "HPE SimpliVity 관리서버에 BaseOS HVM 24.04(Ubuntu 24.04 LTS) 고정 IP/LVM 설정 및 NTP, DNS, NFS(insecure 옵션) 3대 필수 인프라 서비스를 구축합니다."
 date: 2026-08-31T14:00:00+09:00
 draft: false
 categories: ["Tech"]

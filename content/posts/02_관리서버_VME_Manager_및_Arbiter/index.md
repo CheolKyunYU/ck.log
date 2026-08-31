@@ -1,5 +1,6 @@
 ---
 title: "[HPE SimpliVity 6.2.0] Step 2. [관리서버] VME Manager VM(vmgmgr) 설치 & Arbiter 서버 VM 생성 가이드"
+description: "hpe-vm 콘솔을 이용한 HPE VME Manager VM(vmgmgr) 파라미터 세팅 및 2노드 클러스터 Split-Brain 방지용 Arbiter VM 자동시작 구성 노하우를 다룹니다."
 date: 2026-08-31T15:00:00+09:00
 draft: false
 categories: ["Tech"]

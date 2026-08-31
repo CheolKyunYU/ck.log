@@ -1,5 +1,6 @@
 ---
 title: "[HPE SimpliVity 6.2.0] Step 4. [클러스터 & OVC 배포] VM Essentials Manager 기반 HVM Cluster 생성 & SimpliVity Virtual Controller(OVC) 배포 가이드"
+description: "VME Manager 웹 콘솔에서 2노드 HVM Cluster를 생성하고, 핵심 제어용 OVC(OmniStack Virtual Controller) 자동 배포 및 CLI 헬스체크 검증을 진행합니다."
 date: 2026-08-31T17:00:00+09:00
 draft: false
 categories: ["Tech"]

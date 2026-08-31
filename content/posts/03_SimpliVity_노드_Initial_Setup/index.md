@@ -1,5 +1,6 @@
 ---
 title: "[HPE SimpliVity 6.2.0] Step 3. [SimpliVity 서버] 펌웨어 업데이트, HVM Base OS 리이미징 & Initial Setup 가이드"
+description: "SimpliVity 물리 서버의 SPP 펌웨어 업데이트, iLO 원격 콘솔 작업, HVM Base OS 초기화 및 호스트 Initial Setup 수동 설정 가이드입니다."
 date: 2026-08-31T16:00:00+09:00
 draft: false
 categories: ["Tech"]

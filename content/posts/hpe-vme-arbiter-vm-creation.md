@@ -1,5 +1,6 @@
 ---
 title: "HPE VME Manager에 수동으로 Arbiter VM 생성"
+description: "HPE VME Manager 환경에서 수동으로 Arbiter VM을 생성하는 virt-install 스크립트, VNC 5901 접속, GRUB 콘솔 설정 및 dpkg 패키지 설치 절차 가이드입니다."
 date: 2026-01-07T10:00:00+09:00
 draft: false
 categories: ["Tech"]
