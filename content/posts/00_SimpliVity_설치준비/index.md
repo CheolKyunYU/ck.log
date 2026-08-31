@@ -12,6 +12,16 @@ tags: ["HPE", "SimpliVity", "VME", "HCI", "Network", "Architecture", "Installati
 
 ---
 
+> 📌 **HPE SimpliVity 6.2.0 (HVM) 실전 구축 연재 목차**
+> 
+> - **[현재글] [PreStep. 사전 설치 준비 & 2노드 네트워크 설계 가이드](./)**
+> - **[Step 1. 관리서버 BaseOS HVM 24.04 & NTP/DNS/NFS 구성](../01_관리서버_BaseOS_및_인프라서비스/)**
+> - **[Step 2. 관리서버 VME Manager VM & Arbiter VM 설치](../02_관리서버_VME_Manager_및_Arbiter/)**
+> - **[Step 3. SimpliVity 노드 펌웨어 업데이트 & Initial Setup](../03_SimpliVity_노드_Initial_Setup/)**
+> - **[Step 4. VM Essentials Manager 기반 HVM Cluster 생성 & OVC 배포](../04_HVM클러스터_및_OVC배포/)**
+
+---
+
 안녕하세요! 15년 동안 현장을 누비며 수많은 데이터센터와 전산실에서 서버·스토리지·HCI를 구축해 온 필드 엔지니어입니다.
 
 HPE SimpliVity 작업 현장에 나갈 때마다 후배 엔지니어들에게 항상 강조하는 말이 있습니다.
@@ -154,4 +164,4 @@ HPE SimpliVity 6.2.0 2노드 클러스터 구축의 첫걸음은 **정확한 네
 
 ---
 
-다음 포스팅에서는 **[Step 2. HPE SimpliVity Deployment Manager를 이용한 2노드 클러스터 실제 배포 가이드]**로 찾아오겠습니다.
+다음 포스팅에서는 **[Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드](../01_관리서버_BaseOS_및_인프라서비스/)**로 찾아오겠습니다.

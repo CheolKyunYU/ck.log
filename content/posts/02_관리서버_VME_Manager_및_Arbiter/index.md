@@ -12,10 +12,11 @@ tags: ["HPE", "SimpliVity", "VME", "VME-Manager", "Arbiter", "Linux", "Troublesh
 
 > 📌 **HPE SimpliVity 6.2.0 (HVM) 실전 구축 연재 목차**
 > 
-> - **[Step 1. 관리서버 BaseOS HVM 24.04 & NTP/DNS/NFS 구성](../01_관리서버_BaseOS_및_인프라서비스/01_BaseOS_HVM_및_NTP_DNS_NFS_구성.md)**
-> - **[현재글] [Step 2. 관리서버 VME Manager VM & Arbiter VM 설치](./02_VME_Manager_VM_및_Arbiter_설치.md)**
-> - **[Step 3. SimpliVity 노드 펌웨어 업데이트 & Initial Setup](../03_SimpliVity_노드_Initial_Setup/03_SimpliVity_펌웨어_BaseOS_및_Initial_Setup.md)**
-> - **[Step 4. VM Essentials Manager 기반 HVM Cluster 생성 & OVC 배포](../04_HVM클러스터_및_OVC배포/04_HVM_Cluster_생성_및_OVC_배포.md)**
+> - **[PreStep. 사전 설치 준비 & 2노드 네트워크 설계 가이드](../00_SimpliVity_설치준비/)**
+> - **[Step 1. 관리서버 BaseOS HVM 24.04 & NTP/DNS/NFS 구성](../01_관리서버_BaseOS_및_인프라서비스/)**
+> - **[현재글] [Step 2. 관리서버 VME Manager VM & Arbiter VM 설치](./)**
+> - **[Step 3. SimpliVity 노드 펌웨어 업데이트 & Initial Setup](../03_SimpliVity_노드_Initial_Setup/)**
+> - **[Step 4. VM Essentials Manager 기반 HVM Cluster 생성 & OVC 배포](../04_HVM클러스터_및_OVC배포/)**
 
 ---
 
@@ -138,7 +139,7 @@ sudo ufw allow 22122/tcp
 
 | 이전 단계 | 다음 단계 |
 | :---: | :---: |
-| **[⬅️ Step 1. BaseOS & 인프라서비스](../01_관리서버_BaseOS_및_인프라서비스/01_BaseOS_HVM_및_NTP_DNS_NFS_구성.md)** | **[Step 3. SimpliVity 노드 Initial Setup ➡️](../03_SimpliVity_노드_Initial_Setup/03_SimpliVity_펌웨어_BaseOS_및_Initial_Setup.md)** |
+| **[⬅️ Step 1. BaseOS & 인프라서비스](../01_관리서버_BaseOS_및_인프라서비스/)** | **[Step 3. SimpliVity 노드 Initial Setup ➡️](../03_SimpliVity_노드_Initial_Setup/)** |
 
 ---
 궁금한 점은 댓글로 남겨주세요!
