@@ -6,7 +6,7 @@ categories: ["Tech"]
 tags: ["HPE", "SimpliVity", "VME", "HCI", "Network", "Architecture", "Installation", "Troubleshooting"]
 ---
 
-> **작성자**: 15년 차 IT 필드 엔지니어  
+> **작성자**: CK Log  
 > **기준 문서**: HPE SimpliVity 6.2.0 for HPE Morpheus VM Essentials Software Guide (sd00006914en_us)
 
 ---
@@ -42,8 +42,8 @@ HPE SimpliVity 작업 현장에 나갈 때마다 후배 엔지니어들에게 �
 
 ```mermaid
 graph TD
-    subgraph OOB_Mgmt["iLO 전용 관리망 (OOB - Out of Band)"]
-        iLO_SW["iLO 전용 관리 스위치"]
+    subgraph Mgmt["iLO 전용 관리망"]
+        iLO_SW["1G 관리 스위치"]
     end
 
     subgraph External["인바인드 관리 및 서버 외부망"]
@@ -54,14 +54,14 @@ graph TD
 
     subgraph Node1["SimpliVity Node 1"]
         iLO1["iLO 1"]
-        ESXi1["호스트 ESXi 1"]
+        HVM1["호스트 HVM 1"]
         OVC1["가상 컨트롤러 (OVC 1)"]
         VMs1["가상머신 (Workload VMs)"]
     end
 
     subgraph Node2["SimpliVity Node 2"]
         iLO2["iLO 2"]
-        ESXi2["호스트 ESXi 2"]
+        HVM2["호스트 HVM 2"]
         OVC2[" 가상 컨트롤러 (OVC 2)"]
         VMs2["가상머신 (Workload VMs)"]
     end
@@ -71,19 +71,19 @@ graph TD
         VMSW["VM 서비스 스위치<br/>(Workload VM 전용)"]
     end
 
-    %% iLO OOB 연결
+    %% iLO 1G 연결
     iLO1 <--> iLO_SW
     iLO2 <--> iLO_SW
 
-    %% In-Band Mgmt 연결
-    ESXi1 <--> MgmtSW
+    %% In-Band 10g(권고) Mgmt 연결
+    HVM1 <--> MgmtSW
     OVC1 <--> MgmtSW
-    ESXi2 <--> MgmtSW
+    HVM2 <--> MgmtSW
     OVC2 <--> MgmtSW
     Arbiter <--> MgmtSW
     VME <--> MgmtSW
 
-    %% OVC 전용 Storage & Federation 연결
+    %% OVC 전용 10g Storage & Federation 연결
     OVC1 <==>|OVC 데이터 복제 & 동기화| StorSW
     OVC2 <==>|OVC 데이터 복제 & 동기화| StorSW
 
@@ -102,8 +102,8 @@ graph TD
 
 | 구분 | 장비/역할 | 수량 | 필수 사양 및 네트워크 분리 비고 |
 | :--- | :--- | :---: | :--- |
-| **iLO OOB 관리망** | iLO 원격 관리 IP | 2개 | **물리적 독립 분리(OOB)**, 서버 하드웨어 제어 전용 |
-| **인바인드 관리망** | ESXi Host IP | 2개 | Node 1, Node 2 호스트 관리용 |
+| **iLO 관리망** | iLO 원격 관리 IP | 2개 | **물리적 독립 분리**, 서버 하드웨어 제어 전용 |
+| **인바인드 관리망** | HVM Host IP | 2개 | Node 1, Node 2 호스트 관리용 |
 | | OVC Mgmt IP | 2개 | Node 1, Node 2 OVC 관리용 |
 | | External Arbiter IP | 1개 | **SimpliVity 외부** 물리/가상 서버 IP (Port 22122) |
 | | VM Essentials Manager IP | 1개 | 가상화 통합 관리 어플라이언스 (Port 443) |
