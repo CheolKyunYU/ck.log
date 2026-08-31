@@ -1,5 +1,6 @@
 ---
 title: "개인정보처리방침 (Privacy Policy)"
+description: "CK log 블로그의 개인정보 처리방침, 쿠키 수집 및 이용 목적, 방문자 데이터 보호와 사이트 이용 규칙에 대한 안내입니다."
 date: 2026-08-26T21:00:00+09:00
 draft: false
 summary: "CK log 개인정보처리방침 및 문의 안내"

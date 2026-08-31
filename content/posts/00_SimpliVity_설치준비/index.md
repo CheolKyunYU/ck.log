@@ -15,10 +15,10 @@ tags: ["HPE", "SimpliVity", "VME", "HCI", "Network", "Architecture", "Installati
 > 📌 **HPE SimpliVity 6.2.0 (HVM) 실전 구축 연재 목차**
 > 
 > - **[현재글] [PreStep. 사전 설치 준비 & 2노드 네트워크 설계 가이드](./)**
-> - **[Step 1. 관리서버 BaseOS HVM 24.04 & NTP/DNS/NFS 구성](../01_관리서버_BaseOS_및_인프라서비스/)**
-> - **[Step 2. 관리서버 VME Manager VM & Arbiter VM 설치](../02_관리서버_VME_Manager_및_Arbiter/)**
-> - **[Step 3. SimpliVity 노드 펌웨어 업데이트 & Initial Setup](../03_SimpliVity_노드_Initial_Setup/)**
-> - **[Step 4. VM Essentials Manager 기반 HVM Cluster 생성 & OVC 배포](../04_HVM클러스터_및_OVC배포/)**
+> - **[Step 1. 관리서버 BaseOS HVM 24.04 & NTP/DNS/NFS 구성](../01_관리서버_baseos_및_인프라서비스/)**
+> - **[Step 2. 관리서버 VME Manager VM & Arbiter VM 설치](../02_관리서버_vme_manager_및_arbiter/)**
+> - **[Step 3. SimpliVity 노드 펌웨어 업데이트 & Initial Setup](../03_simplivity_노드_initial_setup/)**
+> - **[Step 4. VM Essentials Manager 기반 HVM Cluster 생성 & OVC 배포](../04_hvm클러스터_및_ovc배포/)**
 
 ---
 
@@ -164,4 +164,4 @@ HPE SimpliVity 6.2.0 2노드 클러스터 구축의 첫걸음은 **정확한 네
 
 ---
 
-다음 포스팅에서는 **[Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드](../01_관리서버_BaseOS_및_인프라서비스/)**로 찾아오겠습니다.
+다음 포스팅에서는 **[Step 1. [관리서버] BaseOS HVM 24.04 설치 & 필수 인프라 서비스(NTP, DNS, NFS) 구성 가이드](../01_관리서버_baseos_및_인프라서비스/)**로 찾아오겠습니다.

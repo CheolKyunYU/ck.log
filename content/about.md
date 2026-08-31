@@ -1,5 +1,6 @@
 ---
 title: "About me"
+description: "15년 차 IT 필드 엔지니어 CK의 프로필, 주요 기술 스택, 커리어 이력 및 블로그 운영 목적과 문의 연락처(cheolkyun.yu@gmail.com)를 안내합니다."
 date: 2026-08-27T12:30:00+09:00
 draft: false
 summary: "CK log 블로그 및 작성자 소개"
