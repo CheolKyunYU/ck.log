@@ -87,11 +87,11 @@ flowchart TD
 
 ---
 
-### 3단계: HPE SimpliVity Initial Setup (웹 GUI 1~9단계 접속 세팅)
+### 3단계: HPE SimpliVity Initial Setup (웹 GUI 접속 세팅)
 
 > ⚠️ **접속 방식 변경 안내**: iLO 콘솔 접속이 아닙니다! 웹 브라우저 주소창에 **`https://<Host_IP>:9292`**를 입력하여 HPE SimpliVity Initial Setup 웹 전용 설정 화면으로 접속합니다.
 
-웹 마법사 절차에 따라 순서대로 설정을 진행합니다 (1~9단계 캡처 화면 참고):
+웹 마법사 절차에 따라 순서대로 설정을 진행합니다 (단계별 캡처 화면 참고):
 
 #### 1) 웹 접속 및 초기 환영 화면 (`https://<Host_IP>:9292`)
 웹 브라우저로 `https://<Host_IP>:9292` 접속 후 초기 환영 화면을 확인하고 로그인합니다.
@@ -110,31 +110,22 @@ Management Interface의 IP Address, Subnet Mask, Gateway 정보를 입력합니�
 > ⚠️ **NTP 구성 필수 수칙**: SimpliVity 클러스터의 시간 동기화 및 쿼럼(Quorum) 안정성을 위해 **NTP 서버는 반드시 최소 3개 이상**을 입력/등록해야 합니다! (예: 관리서버 NTP IP, 게이트웨이/상위 NTP IP, 외부 NTP IP 등 총 3개 이상 세팅 필수)
 ![Initial Setup 4단계 DNS 및 NTP 서버 설정](images/initial_setup_4.jpg)
 
-#### 5) iLO 관리 정보 확인
-서버 하드웨어 제어를 위한 iLO IP 주소 및 관리용 계정 정보를 입력합니다.
-![Initial Setup 5단계 iLO 관리 정보 확인](images/initial_setup_5.jpg)
-
-#### 6) 스토리지 / Federation 네트워크 구성
-SimpliVity 노드 간 데이터 동기화 전용 Storage/Federation IP 대역을 설정합니다.
-> 💡 **HPE SimpliVity 6.2.0 변경사항 안내**: 이전 버전 마법사에 있었던 VME Manager 정보 입력 및 라이선스(License) 등록 단계는 **SimpliVity 6.2.0 Initial Setup 마법사에서 완전히 제거**되었습니다. VME 연동 및 라이선스는 차후 [Step 4] VME Manager 웹 콘솔에서 클러스터 등록 시 처리됩니다.
-![Initial Setup 6단계 스토리지 네트워크 설정](images/initial_setup_6.jpg)
-
-#### 7) 필수 배포 파일 업로드 및 검증 (4가지 필수 파일)
+#### 5) 필수 배포 파일 업로드 및 검증 (4가지 필수 파일)
 SimpliVity 가상 컨트롤러(OVC) 배포 및 VME 플러그인 연동을 위해 **총 4가지 핵심 파일**을 반드시 업로드하고 서명(Signature) 검증을 완료해야 합니다:
 * 1️⃣ **OVC 이미지 파일**: `HPE-SimpliVity-Virtual-Controller-XXX-release.qcow2`
 * 2️⃣ **OVC 이미지 서명 파일**: `HPE-SimpliVity-Virtual-Controller-XXX-release.qcow2.sig`
 * 3️⃣ **Plugin 파일**: `plugin` (또는 `HPE-SimpliVity-VME-Plugin-XXX` 패키지)
 * 4️⃣ **Plugin 서명 파일**: `plugin.sig`
 
-![Initial Setup 7단계 필수 4개 파일 업로드 및 검증](images/initial_setup_7.jpg)
+![Initial Setup 필수 4개 파일 업로드 및 검증](images/initial_setup_7.jpg)
 
-#### 8) 최종 설정 확인 및 시작 (Setup 버튼 클릭)
+#### 6) 최종 설정 확인 및 시작 (Setup 버튼 클릭)
 전체 입력 파라미터를 최종 확인하고 화면 하단의 **`Setup`** 버튼을 클릭하여 호스트 바인딩 및 초기화 프로세스를 실행합니다.
-![Initial Setup 8단계 최종 Setup 버튼 클릭](images/initial_setup_8.jpg)
+![Initial Setup 최종 Setup 버튼 클릭](images/initial_setup_8.jpg)
 
-#### 9) Initial Setup 완료 및 Discovery 대기
+#### 7) Initial Setup 완료 및 Discovery 대기
 설정 적용이 100% 완료되면 노드가 Discovery 준비 상태로 전환되어 [Step 4] VME Manager 웹 콘솔에서 검색 및 클러스터 생성이 가능해집니다.
-![Initial Setup 9단계 완료 화면](images/initial_setup_9.jpg)
+![Initial Setup 완료 화면](images/initial_setup_9.jpg)
 
 ---
 
