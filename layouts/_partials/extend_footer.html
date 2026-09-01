@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const mermaidCodes = document.querySelectorAll('code.language-mermaid, code.mermaid');
+    if (mermaidCodes.length > 0) {
+      mermaidCodes.forEach((codeEl) => {
+        const pre = codeEl.closest('pre');
+        const container = document.createElement('div');
+        container.className = 'mermaid';
+        container.style.textAlign = 'center';
+        container.style.margin = '1.5em 0';
+        container.textContent = codeEl.textContent;
+        if (pre) {
+          pre.parentNode.replaceChild(container, pre);
+        } else {
+          codeEl.parentNode.replaceChild(container, codeEl);
+        }
+      });
+      mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    }
+  });
+</script>
