@@ -81,7 +81,8 @@ flowchart TD
 
 2. **Host Config Options (네트워크 바인딩)**
    * **Management Interface**: 관리서버의 네트워크 인터페이스 포트를 선택합니다.
-     > ⚠️ **운영 환경 필수 수칙 (Bonding 구성)**: 단일 물리 NIC 포트(예: `ens224`)는 Single Network 테스트/Lab 예시입니다. 실제 운영 환경에서는 네트워크 장애(Link Down) 방지를 위해 **Active/Standby(또는 LACP) 본딩(Bonding)을 미리 구성한 후, 생성된 Bond 디바이스(예: `bond0`)를 반드시 선택**해야 합니다.
+     > ⚠️ **운영 환경 필수 수칙 (Active/Standby 본딩 & `miimon` 세팅)**: 단일 물리 NIC 포트(예: `ens224`)는 Single Network 테스트/Lab 예시입니다. 실제 운영 환경에서는 네트워크 포트 및 스위치 장애(Link Down) 방지를 위해 **Active/Standby 본딩(Bonding)을 미리 구성한 후, 생성된 Bond 디바이스(예: `bond0`)를 반드시 선택**해야 합니다.  
+     > 💡 **본딩 구성 실무 핵심**: Active/Standby 본딩 설정 시 물리 회선 끊김을 주기적으로 감지하는 **`miimon` 값(예: `miimon=100`)을 잊지 말고 반드시 세팅**해야 링크 장애 발생 시 Standby 포트로 즉시 정상 장애조치(Failover)가 작동합니다.
    * **`[ ] Use Compute VLAN?`**: 관리 트래픽에 VLAN 태깅이 필요한 경우 체킹하고 VLAN ID를 지정합니다.
 
 3. **배포 실행 (`<Install>`)**
