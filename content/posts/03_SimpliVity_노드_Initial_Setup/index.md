@@ -1,6 +1,6 @@
 ---
 title: "[HPE SimpliVity 6.2.0] Step 3. [SimpliVity 서버] 펌웨어 업데이트, HVM Base OS 리이미징 & Initial Setup 가이드"
-description: "SimpliVity 물리 서버 SPP 펌웨어 업데이트, HPE Software Center 기반 HVM Base OS 리이미징 및 https://IP:9292 웹 GUI Initial Setup 1~9단계 실전 가이드입니다."
+description: "SimpliVity 물리 서버 SPP 펌웨어 업데이트, HPE Software Center 기반 HVM Base OS 리이미징 및 https://IP:9292 웹 GUI Initial Setup 실전 가이드입니다."
 date: 2026-08-31T16:00:00+09:00
 draft: false
 categories: ["Tech"]
@@ -26,7 +26,7 @@ tags: ["HPE", "SimpliVity", "Firmware", "InitialSetup", "SPP", "HVM", "Troublesh
 
 현장 구축 순서도에서 이 단계는 하단 영역의 시작점으로, **SimpliVity 서버의 펌웨어(SPP) 업데이트, HVM Base OS 리이미징(필요시), 그리고 호스트의 Initial Setup(초기 설정)**을 진행합니다.
 
-이번 포스팅에서는 **SimpliVity 물리 서버 초기화 및 https://IP:9292 웹 GUI 기반 Initial Setup 1~9단계 실전 절차와 현장 노하우**를 상세히 정리해 드리겠습니다.
+이번 포스팅에서는 **SimpliVity 물리 서버 초기화 및 https://IP:9292 웹 GUI 기반 Initial Setup 실전 절차와 현장 노하우**를 상세히 정리해 드리겠습니다.
 
 ---
 
@@ -140,12 +140,12 @@ SimpliVity 가상 컨트롤러(OVC) 배포 및 VME 플러그인 연동을 위해
 
 ## 5. 결론 및 핵심 요약
 
-SimpliVity 물리 서버의 **펌웨어 최신화, HVM 리이미징, 그리고 https://IP:9292 웹 GUI Initial Setup 1~9단계**가 완료되면, 비로소 노드가 VME Manager의 중앙 제어를 받을 준비가 끝납니다.
+SimpliVity 물리 서버의 **펌웨어 최신화, HVM 리이미징, 그리고 https://IP:9292 웹 GUI Initial Setup**이 완료되면, 비로소 노드가 VME Manager의 중앙 제어를 받을 준비가 끝납니다.
 
 ### 📌 오늘의 핵심 요약 3가지
 1. **SPP 펌웨어 최신화**: iLO를 통해 SPP ISO를 올려 서버 하드웨어 펌웨어를 먼저 최신화합니다.
 2. **HPE Software Center HVM 리이미징**: 필요 시 `HPE-SVT-HVM-HostOS-XXX-release.iso` 파일로 HVM OS를 순정 복구합니다.
-3. **`https://<Host_IP>:9292` Initial Setup 웹 세팅**: 웹 접속 후 1~9단계 마법사를 통해 호스트명, Mgmt IP, 관리서버 NTP/DNS 주소를 주입합니다.
+3. **`https://<Host_IP>:9292` Initial Setup 웹 세팅**: 웹 접속 후 마법사를 통해 호스트명, Mgmt IP, 관리서버 NTP/DNS 주소를 주입합니다.
 
 ---
 
