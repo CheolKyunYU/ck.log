@@ -76,10 +76,12 @@ flowchart TD
    * **Hostname**: VME Manager 호스트 이름을 입력합니다. (예: `vmemgr05`)
    * **Admin User / Password**: 웹 콘솔 최초 로그인 관리자 계정(`vmeadmin`)과 암호를 설정합니다.
    * **Image URI**: `<Browse Files>` 버튼을 눌러 CD-ROM 또는 NFS 경로상의 이미지 파일(`hpe-vm-essentials-8.0.7-4.qcow`)을 마운트합니다.
-   * **Select VM Size**: 클러스터 규모에 맞춰 VM 크기(`Small` / `Medium` / `Large`)를 선택합니다. (2노드 소규모 환경은 `Small` 선택 가능)
+   * **Select VM Size**: 클러스터 규모에 맞춰 VM 크기(`Small` / `Medium` / `Large`)를 선택합니다.
+     > 💡 **필드 엔지니어 팁 (VM Size 선택)**: 2노드 소규모 환경도 `Small`로 배포 가능하지만, VME Manager가 장착되는 관리서버는 보통 DL380과 같은 전용 서버가 들어옵니다. 추후 노드 확장 시 VME Manager 자원 부족으로 인한 스케일 업(Scale-up) 작업과 서비스 중단 시간을 미리 예방하기 위해, 최초 배포 시 **`Large` 사양으로 선택하는 것을 강력히 추천**합니다.
 
 2. **Host Config Options (네트워크 바인딩)**
-   * **Management Interface**: 관리서버의 이더넷 포트(예: `ens224`)를 선택합니다.
+   * **Management Interface**: 관리서버의 네트워크 인터페이스 포트를 선택합니다.
+     > ⚠️ **운영 환경 필수 수칙 (Bonding 구성)**: 단일 물리 NIC 포트(예: `ens224`)는 Single Network 테스트/Lab 예시입니다. 실제 운영 환경에서는 네트워크 장애(Link Down) 방지를 위해 **Active/Standby(또는 LACP) 본딩(Bonding)을 미리 구성한 후, 생성된 Bond 디바이스(예: `bond0`)를 반드시 선택**해야 합니다.
    * **`[ ] Use Compute VLAN?`**: 관리 트래픽에 VLAN 태깅이 필요한 경우 체킹하고 VLAN ID를 지정합니다.
 
 3. **배포 실행 (`<Install>`)**
@@ -89,7 +91,9 @@ flowchart TD
 
 ## 4. Arbiter 서버 VM 생성 및 서비스 설치 3단계
 
-> ⚠️ **중요**: Arbiter는 반드시 SimpliVity 물리 노드가 아닌, **외부 관리서버 내부 VM**으로 독립 생성해야 합니다!
+> ⚠️ **중요**: Arbiter는 반드시 SimpliVity 물리 노드가 아닌, **외부 관리서버**에 독립 구성해야 합니다!
+> 
+> 💡 **Arbiter 설치 위치 & CLI 수동 구성 가이드**: Arbiter는 외부 설치 항목이지만 VME Manager가 올라가는 관리서버 내부에 함께 가상머신(또는 리눅스 서비스)으로 설치할 수 있습니다. CLI 명령어를 이용한 수동 KVM VM 생성 및 패키지 상세 구축 절차는 **[HPE VME Manager에 수동으로 Arbiter VM 생성]({{< relref "/posts/hpe-vme-arbiter-vm-creation" >}})** 포스팅을 참고하세요.
 
 ### 1단계: Arbiter 전용 경량 VM 생성
 * 관리서버 상에 소형 Linux(또는 Windows) VM을 1대 생성합니다. (사양: 1~2 vCPU, 2~4GB RAM)
@@ -113,7 +117,10 @@ sudo ufw allow 22122/tcp
 
 ---
 
-## 5. 15년 차 엔지니어의 실전 팁 (Troubleshooting)
+## 5. 15년 차 엔지니어의 실전 팁 (Troubleshooting & Tips)
+
+> 💡 **전산실 인프라 서비스(DNS / NTP / NFS) 미구축 고객사 조치 팁**  
+> 고객사 전산실에 전용 DNS, NTP, NFS 서버가 구축되어 있지 않더라도 걱정하실 필요가 없습니다. 관리서버(Management Server) 내부에 리눅스 데몬 서비스(Chrony, BIND9, NFS-Kernel-Server)로 직접 설치하거나 경량 전용 VM으로 손쉽게 서비스 환경을 구성하여 SimpliVity 클러스터에 인프라 서비스를 완벽하게 제공할 수 있습니다.
 
 > ⚠️ **현장에서 가장 많이 하는 실수 Top 2**
 > 
