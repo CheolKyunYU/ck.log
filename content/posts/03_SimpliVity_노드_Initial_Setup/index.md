@@ -89,8 +89,6 @@ flowchart TD
 
 ### 3단계: HPE SimpliVity Initial Setup (웹 GUI 접속 세팅)
 
-> ⚠️ **접속 방식 변경 안내**: iLO 콘솔 접속이 아닙니다! 웹 브라우저 주소창에 **`https://<Host_IP>:9292`**를 입력하여 HPE SimpliVity Initial Setup 웹 전용 설정 화면으로 접속합니다.
-
 웹 마법사 절차에 따라 순서대로 설정을 진행합니다 (단계별 캡처 화면 참고):
 
 #### 1) 웹 접속 및 초기 환영 화면 (`https://<Host_IP>:9292`)
