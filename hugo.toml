@@ -3,6 +3,7 @@ locale = "ko-KR"
 title = "CK log"
 theme = "PaperMod"
 paginate = 10
+enableRobotsTXT = true
 
 # PaperMod Search
 [outputs]
