@@ -19,6 +19,9 @@ enableRobotsTXT = true
   ShowShareButtons = true
   ShowPostNavLinks = true
 
+[params.analytics.google]
+  SiteVerificationTag = "dr0Q6_PYk2R4JOUSa884LZJjb8hrAqlRxTg5j-XnkgY"
+
 
 
 
